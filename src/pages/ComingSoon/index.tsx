@@ -6,7 +6,8 @@ import { Wrapper, Heading } from './styles';
 const ComingSoon: React.FC = () => {
   return (
     <Wrapper>
-      <Heading>ComingSoon</Heading>
+      <Heading>Em breve</Heading>
+      <Text style={{color: 'red'}}>Estamos em manutenção</Text>
     </Wrapper>
   )
 };
