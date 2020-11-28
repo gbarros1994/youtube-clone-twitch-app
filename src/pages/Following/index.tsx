@@ -2,6 +2,8 @@ import React from 'react';
 import { FlatList, Text, View } from 'react-native';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
+import CategoryList from '../../components/CategoryList';
+import Title from '../../components/Title';
 import { Wrapper, Container, Main } from './styles';
 
 const Following: React.FC = () => {
@@ -20,25 +22,25 @@ const Following: React.FC = () => {
       },
       {
         key: 'FOLLOWED_CATEGORIES',
-        render: () => <View/>,
+        render: () => <Title>Followed Categories</Title>,
         isTitle: true,
       },
-      { key: 'C1', render: () => <View/> },
+      { key: 'C1', render: () => <CategoryList/> },
       {
         key: 'LIVE_CHANNELS',
-        render: () => <View/>,
+        render: () => <Title>Live channels</Title>,
         isTitle: true,
       },
       { key: 'C2', render: () => <View/> },
       {
         key: 'CONTINUE_WATCHING',
-        render: () => <View/>,
+        render: () => <Title>Continue watching</Title>,
         isTitle: true,
       },
       { key: 'C3', render: () => <View/> },
       {
         key: 'OFFLINE_CHANNELS',
-        render: () => <View/>,
+        render: () => <Title>Offline channles</Title>,
         isTitle: true,
       },
       { key: 'C4', render: () => <View/> }
