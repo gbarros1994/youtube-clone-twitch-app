@@ -2,9 +2,12 @@ import React from 'react';
 import { FlatList, Text, View } from 'react-native';
 import Header from '../../components/Header';
 import Heading from '../../components/Heading';
-import CategoryList from '../../components/CategoryList';
 import Title from '../../components/Title';
 import { Wrapper, Container, Main } from './styles';
+import CategoryList from '../../components/CategoryList';
+import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
+
 
 const Following: React.FC = () => {
 
@@ -31,19 +34,19 @@ const Following: React.FC = () => {
         render: () => <Title>Live channels</Title>,
         isTitle: true,
       },
-      { key: 'C2', render: () => <View/> },
+      { key: 'C2', render: () => <StreamList/> },
       {
         key: 'CONTINUE_WATCHING',
         render: () => <Title>Continue watching</Title>,
         isTitle: true,
       },
-      { key: 'C3', render: () => <View/> },
+      { key: 'C3', render: () => <StreamList/> },
       {
         key: 'OFFLINE_CHANNELS',
         render: () => <Title>Offline channles</Title>,
         isTitle: true,
       },
-      { key: 'C4', render: () => <View/> }
+      { key: 'C4', render: () => <ChannelList/> }
     ];
 
     const indices: number[] = [];
