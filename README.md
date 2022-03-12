@@ -1,5 +1,5 @@
 <h1 align="center">
-UI Clone - Twitch Responsive
+-- UI Clone - Twitch Responsive --
 </h1>
 
 <p align="center">Responsive Twitter UI Clone (partial) for study purposes.</p>
